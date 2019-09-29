@@ -16,7 +16,7 @@ after_success:
   # login to docker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push docker images
-  - dockerk push multi-client
-  - dockerk push multi-nginx
-  - dockerk push multi-server
-  - dockerk push multi-worker
+  - docker push multi-client
+  - docker push multi-nginx
+  - docker push multi-server
+  - docker push multi-worker
